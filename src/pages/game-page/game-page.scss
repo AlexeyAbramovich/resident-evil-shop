@@ -1,0 +1,156 @@
+.game-page__container {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 150px;
+    width: 100%;
+    min-height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.game-page__info-block {
+    display: flex;
+    column-gap: 100px;
+    margin-bottom: 50px;
+}
+
+.info-block__cover {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.info-block__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.info__name {
+    font-family: monospace;
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+}
+
+.info__release,
+.info__creator,
+.info__genre,
+.info__rating {
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.genre__text {
+    color: var(--re-color);
+    font-family: var(--re-font);
+    font-size: 30px;
+    letter-spacing: 1px;
+    background-color: rgba(36, 36, 36, 0.7);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.platforms {
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    list-style-type: disc;
+
+    li {
+        margin-left: 30px;
+        padding: 5px 0;
+    }
+}
+
+.game-page__description,
+.game-page__system-requirements {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    font-family: monospace;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 50px;
+
+    .description__title {
+        position: relative;
+        font-size: 30px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -520px;
+            width: 500px;
+            height: 2px;
+            background-color: white;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -520px;
+            width: 500px;
+            height: 2px;
+            background-color: white;
+        }
+    }
+
+    .system-requirements__title {
+        position: relative;
+        font-size: 30px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -422px;
+            width: 400px;
+            height: 2px;
+            background-color: white;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -422px;
+            width: 400px;
+            height: 2px;
+            background-color: white;
+        }
+    }
+
+    .description__text,
+    .system-requirements__text {
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .system-requirements__text {
+        width: 70%;
+    }
+}
+
+.game-page__trailer-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.game-page__trailer {
+    width: 70%;
+    height: 600px;
+    margin-bottom: 50px;
+}
