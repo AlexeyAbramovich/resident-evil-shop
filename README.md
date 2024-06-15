@@ -11,6 +11,7 @@
 -  React Router Dom
 -  AntD/AntD Icons
 -  axios
+-  scss
 
 # Preview
 ![image](https://github.com/AlexeyAbramovich/resident-evil-shop/assets/74393859/2225338a-845b-4f17-8116-2356d541f0bc)
