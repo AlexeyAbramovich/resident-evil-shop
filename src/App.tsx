@@ -1,40 +1,28 @@
-import { Header } from './components/header'
-import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import { fetchGames } from './api/api'
-import { HomePage } from './pages/home-page'
-import { UnknownAction } from '@reduxjs/toolkit'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { GamePage } from './pages/game-page'
-import { OrderPage } from './pages/order-page'
-import './reset.scss'
-import './app.scss'
+import { Header } from './components/layout/header'
+import { Game } from './components/screens/game'
+import { Home } from './components/screens/home'
+import { Order } from './components/screens/order'
+import { useFetchGames } from './hooks/useFetchGames'
+import './styles/app.scss'
 
 function App() {
-  const dispatch = useDispatch()
+	useFetchGames()
 
-  useEffect(() => {
-    dispatch(fetchGames() as unknown as UnknownAction)
-  }, [])
-
-  return (
-    <>
-      <div className="container">
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-          </Routes>
-          <Routes>
-            <Route path="/game/:name" element={<GamePage />} />
-          </Routes>
-          <Routes>
-            <Route path="/order" element={<OrderPage />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
-    </>
-  )
+	return (
+		<>
+			<div className='container'>
+				<BrowserRouter>
+					<Header />
+					<Routes>
+						<Route path='/' element={<Home />} />
+						<Route path='/game/:name' element={<Game />} />
+						<Route path='/order' element={<Order />} />
+					</Routes>
+				</BrowserRouter>
+			</div>
+		</>
+	)
 }
 
 export default App

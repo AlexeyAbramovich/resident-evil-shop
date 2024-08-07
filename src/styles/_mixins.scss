@@ -1,0 +1,68 @@
+@import './variables';
+
+@mixin button-style($type: 'add') {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	padding: 10px;
+	font-family: $re-font;
+	color: $text-color;
+	font-size: 24px;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+
+	@if $type == 'add' {
+		background-color: $element-bg-color;
+	} @else {
+		background-color: lighten($element-bg-color, 7%);
+	}
+
+	&:hover {
+		@if $type == 'add' {
+			color: $re-color;
+		} @else {
+			color: $text-color;
+		}
+		background-color: darken($element-bg-color, 7%);
+	}
+
+	&:active {
+		opacity: 0.2;
+	}
+
+	@media (max-width: 920px) {
+		right: 10px;
+		bottom: 10px;
+		font-size: 18px;
+		padding: 8px;
+	}
+}
+
+@mixin line-style($type: 'before') {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: white;
+
+	@if $type == 'before' {
+		margin-right: 20px;
+	} @else {
+		margin-left: 20px;
+	}
+
+	@media (max-width: 450px) {
+		@if $type == 'before' {
+			margin-right: 5px;
+		} @else {
+			margin-left: 5px;
+		}
+	}
+}
+
+@mixin img-size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}

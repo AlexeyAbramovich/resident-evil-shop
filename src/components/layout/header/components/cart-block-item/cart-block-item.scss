@@ -1,0 +1,70 @@
+@import '/src/styles/variables';
+
+.cart-block-item {
+	display: flex;
+	column-gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+	color: $text-color;
+	font-size: $text-size;
+	font-family: monospace;
+	margin-bottom: 10px;
+	font-weight: 700;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: rgb(42, 42, 42, 0.6);
+	backdrop-filter: blur(5px);
+	transition: all 0.2s ease;
+	cursor: pointer;
+
+	&:hover {
+		background-color: rgba(98, 98, 98, 0.8);
+	}
+	&:active {
+		background-color: rgba(98, 98, 98, 0.4);
+	}
+
+	&__name {
+		width: 200px;
+		@media (max-width: 1200px) {
+			width: 150px;
+		}
+	}
+
+	&__price {
+		width: 40px;
+	}
+
+	&__img {
+		width: 100px;
+		height: 50px;
+		object-fit: cover;
+
+		@media (max-width: 1200px) {
+			width: 75px;
+			height: 40px;
+		}
+
+		@media (max-width: 450px) {
+			display: none;
+		}
+	}
+
+	&__delete-btn {
+		width: 20px;
+		transition: color 0.1s ease;
+		cursor: pointer;
+
+		&:hover {
+			color: rgb(160, 160, 160);
+		}
+
+		&:active {
+			color: $re-color;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 16px;
+	}
+}
