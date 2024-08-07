@@ -14,7 +14,10 @@
 -  scss
 
 # Preview
-![image](https://github.com/AlexeyAbramovich/resident-evil-shop/assets/74393859/2225338a-845b-4f17-8116-2356d541f0bc)
-![image](https://github.com/AlexeyAbramovich/resident-evil-shop/assets/74393859/2a43dde3-7f78-4393-be49-fa80dd9a437e)
-![image](https://github.com/AlexeyAbramovich/resident-evil-shop/assets/74393859/23e36f5b-f7de-4019-b8ac-a1b1c2c9c51a)
+![image](https://github.com/user-attachments/assets/2f65a0e5-b710-4a7f-96ba-2c590e88054d)
+
+![image](https://github.com/user-attachments/assets/534af6f3-6ad3-49eb-806a-3a4dbacc8d3f)
+
+![image](https://github.com/user-attachments/assets/ce313c9e-2c70-42ea-86e5-3c5c355c005d)
+
 
