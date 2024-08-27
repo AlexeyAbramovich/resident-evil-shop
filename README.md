@@ -3,6 +3,7 @@
 - Separate page for full game info and trailer
 - Search by available games
 - Simulation of creating an order
+- Adaptive design
 
 # Used technologies
 -  React
