@@ -5,13 +5,14 @@
 - Simulation of creating an order
 
 # Used technologies
--  TypeScript
 -  React
--  Redux Toolkit
+-  TypeScript
+-  Redux
 -  React Router Dom
 -  AntD/AntD Icons
 -  axios
--  scss
+-  SCSS
+-  HTML
 
 # Preview
 ![image](https://github.com/user-attachments/assets/2f65a0e5-b710-4a7f-96ba-2c590e88054d)
